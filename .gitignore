@@ -1,0 +1,38 @@
+#--- Misc -------------------------
+.DS_Store
+**/_archives
+crash.log
+logs/
+#--- Terraform ----------------------
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.terraform.*
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+*terraform.rcm
+*outputs.tf
+*user_data_content.txt
+#--- Project ------------------------
+config.yaml
+config-backup*.yaml
+_backup
+**/bootstrap_*
+**/bootstrap_content*
+#--- venv ---------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+#--- IDE files --------------
+.vscode/
+.zed
+*.code-workspace
+.idea
