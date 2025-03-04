@@ -26,7 +26,7 @@ module "my_vpc" {
 }
 ```
 
-# Deploy C8000v instances in AWS
+## Deploy C8000v instances in AWS
 
 Then deploy C8000v instances.
 Deploy as many instances as you need. They will be instantiated in the same VPC.

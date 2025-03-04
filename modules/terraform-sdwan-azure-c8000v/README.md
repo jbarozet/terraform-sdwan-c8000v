@@ -23,7 +23,7 @@ module "my_vnet" {
 }
 ```
 
-# Deploy C8000v instances in Azure
+## Deploy C8000v instances in Azure
 
 Then deploy C8000v instances.
 Deploy as many instances as you need. They will be instantiated in the same VNET.
