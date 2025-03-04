@@ -22,7 +22,9 @@ config.yaml
 config-backup*.yaml
 _backup
 **/bootstrap_*
+**/bootstrap-*
 **/bootstrap_content*
+**/bootstrap-content*
 #--- venv ---------------------------
 .env
 .venv
