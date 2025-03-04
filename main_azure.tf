@@ -36,7 +36,7 @@ module "c8000v_azure" {
   image_sku       = local.config.azure.image_sku
   image_publisher = local.config.azure.image_publisher
   image_version   = local.config.azure.image_version
-  site_id         = local.config.aws.site_id
+  site_id         = local.config.azure.site_id
 
   # VNET parameters: outputs from vnet module
   resource_group_name         = module.my_vnet.resource_group_name
