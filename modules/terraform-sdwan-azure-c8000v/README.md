@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 
 module "my_vnet" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-azure-vnet"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-azure-vnet"
 
   name                    = sdwanlab
   location                = francecentral
@@ -30,7 +30,7 @@ Deploy as many instances as you need. They will be instantiated in the same VNET
 
 ```hcl
 module "c8000v_3" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-azure-c8000v"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-azure-c8000v"
 
   # SD-WAN Overlay Parameters
   name              = sdwanlab

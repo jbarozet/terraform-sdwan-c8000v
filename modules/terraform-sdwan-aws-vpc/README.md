@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 module "my_vpc" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-aws-vpc"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-aws-vpc"
 
   name                    = sdwanlab
   availability_zone       = eu-west-3a

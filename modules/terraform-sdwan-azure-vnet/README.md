@@ -13,7 +13,7 @@ provider "azurerm" {
 }
 
 module "my_vnet" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-azure-vnet"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-azure-vnet"
 
   name                    = sdwanlab
   location                = francecentral

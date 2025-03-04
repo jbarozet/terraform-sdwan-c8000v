@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "my_vpc" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-aws-vpc"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-aws-vpc"
 
 
   name                    = sdwanlab
@@ -33,7 +33,7 @@ Deploy as many instances as you need. They will be instantiated in the same VPC.
 
 ```hcl
 module "c8000v_1" {
-  source = "app.terraform.io/jbarozet/terraform-sdwan-c8000v//modules/terraform-sdwan-aws-c8000v"
+  source = "jbarozet/c8000v/sdwan//modules/terraform-sdwan-aws-c8000v"
 
   # SD-WAN Overlay Parameters
   name              = sdwanlab
