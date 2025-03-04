@@ -1,4 +1,18 @@
-# Terraform Modules for Catalyst 8000v deployment on AWS and Azure
+# Catalyst 8000v SD-WAN AWS and Azure Module
 
-- [Modules](modules/README.md)
-- [Examples](examples/README.md)
+This repo contains a module for deploying Catalyst 8000v in Controller Mode (SD-WAN) on Azure and AWS using Terraform.
+
+## How to use this module
+
+This module has the following structure:
+
+- [Root](https://github.com/jbarozet/terraform-sdwan-c8000v/MAIN.md): This folder shows an example of Terraform code to deploy C8000v on AWS and Azure
+- [Modules](https://github.com/jbarozet/terraform-sdwan-c8000v/modules): This folder contains the reusable code for this Module, broken down into more modules
+- [Examples](examples/README.md): This folder contains examples of how to use the modules.
+
+## Code included in this Module
+
+- [Create AWS VPC](https://github.com/jbarozet/terraform-sdwan-c8000v/modules/terraform-sdwan-aws-vpc)
+- [Deploy C8000v instances in AWS VPC](https://github.com/jbarozet/terraform-sdwan-c8000v/modules/terraform-sdwan-aws-c8000v)
+- [Create Azure VNET](https://github.com/jbarozet/terraform-sdwan-c8000v/modules/terraform-sdwan-azure-c8000v)
+- [Deploy C8000v instances in Azure VNET](https://github.com/jbarozet/terraform-sdwan-c8000v/modules/terraform-sdwan-azure-vnet)

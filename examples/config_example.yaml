@@ -1,9 +1,9 @@
 # Global
 name: sdwanlab
 
-# Controllerrs
+# Controllers
 overlay:
-  organization_name: <ORG_NAME>
+  organization_name: [ORG_NAME]
   vbond: 192.168.3.1
   vbond_port: 12346
 
@@ -14,31 +14,31 @@ aws:
   address_space: 10.1.0.0/16
   subnet_transport_prefix: 10.1.11.0/24
   subnet_service_prefix: 10.1.12.0/24
-  image_id: ami-xxxxxxxxxxxx
+  image_id: [ami-xxxxxxxxxxxx]
   instance_type: c5n.large
   site_id: 1001
 
   edge_instances:
     - hostname: edge-1
-      uuid: C8K-XXXX-XXXX-XXXX-XXXX
-      otp: xxxxxxxxxxxx
+      uuid: [C8K-XXXX-XXXX-XXXX-XXXX]
+      otp: [xxxxxxxxxxxx]
       system_ip: 192.168.101.1
       transport_ip: 10.1.11.101
       service_ip: 10.1.12.101
-      admin_username: <USERNAME>
-      admin_password: <PASSWORD>
+      admin_username: [USERNAME]
+      admin_password: [PASSWORD]
     - hostname: edge-2
-      uuid: C8K-YYYY-YYYY-YYYY-YYYY
-      otp: yyyyyyyyyyyyy
+      uuid: [C8K-YYYY-YYYY-YYYY-YYYY]
+      otp: [yyyyyyyyyyyyy]
       system_ip: 192.168.102.1
       transport_ip: 10.1.11.102
       service_ip: 10.1.12.102
-      admin_username: <USERNAME>
-      admin_password: <PASSWORD>
+      admin_username: [USERNAME]
+      admin_password: [PASSWORD]
 
 # Azure Configuration
 azure:
-  subscription_id: <your_subscription_id>
+  subscription_id: [YOUR_SUBSCRIPTION_ID]
   cloud_region: westeurope
   location: francecentral
   address_space: 10.1.0.0/16
@@ -54,10 +54,10 @@ azure:
 
   edge_instances:
     - hostname: edge-3
-      uuid: C8K-XXXX-XXXX-XXXX-XXXX
-      otp: xxxxxxxxxxxx
+      uuid: [C8K-XXXX-XXXX-XXXX-XXXX]
+      otp: [xxxxxxxxxxxx]
       system_ip: 192.168.103.1
       transport_ip: 10.1.11.103
       service_ip: 10.1.12.103
-      admin_username: <USERNAME>
-      admin_password: <PASSWORD>
+      admin_username: [USERNAME]
+      admin_password: [PASSWORD]
